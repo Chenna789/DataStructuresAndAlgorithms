@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkedListDataStructure.SinglyLinkedListDS
+namespace LinkedListDataStructure
 {
-    class Node
+    class Node<AnyType>
     {
-        public object data;
-        public Node next;
-        public Node(object data)
+        public Node<AnyType> next;
+        public AnyType data;
+        public Node(AnyType data)
         {
             this.data = data;
         }

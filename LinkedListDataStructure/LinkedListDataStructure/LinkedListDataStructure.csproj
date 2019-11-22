@@ -43,11 +43,51 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenericNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SinglyLinkedListDS\ILinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\AddAfter.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\AddAtSpecifiedIndex.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\AddBefore.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\AddBefore_Improved_Complexity.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\AddFirst.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\AddLastWithConstantTime.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\GetNode.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\Indexer.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\Remove.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\RemoveWith_O%281%29.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\Reverse.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\SetNode.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\SinglyLinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\AddAfter.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\AddAtSpecifiedIndex.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\AddBefore.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\AddBefore_Improved_Complexity.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\AddFirst.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\AddLast.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\GetNode.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\Indexer.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\Remove.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\RemoveWith_O%281%29.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\Reverse.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\SetNode.cs" />
+    <Compile Include="SinglyLinkedListDS\WithoutTail\SinglyLinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\AddAfter.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\AddAtSpecifiedIndex.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\AddBefore.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\AddBefore_Improved_Complexity.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\AddFirst.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\AddLastWithConstantTime.cs" />
     <Compile Include="SinglyLinkedListDS\Node.cs" />
-    <Compile Include="SinglyLinkedListDS\SinglyLinkedList.cs" />
-    <Compile Include="SinglyLinkedListDS\SinglyLinkedListWithTail.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\GetNode.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\Indexer.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\Remove.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\RemoveWith_O%281%29.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\Reverse.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\SetNode.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\SinglyLinkedList.cs" />
+    <Compile Include="TestLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

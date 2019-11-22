@@ -24,7 +24,7 @@ on the starting, what you will do?
 Since we have the head node pointer we are just linking new node to it.
 This has the complexity of O(1) - Constant time
 
-2) Insert on the Last Node
+2) Insert at the Last Node
 -------------------------------
 How do you insert a new link to the end of the chain?
 	i) Find the Last node(iterate till last node) and make lastnode.next = newItem - O(n)
@@ -37,5 +37,18 @@ How do you insert a new link in the middle(or specified index) in the chain?
 	and indexNode.next = newNode; We can track the linked list
 	size using count so that when we are inserting we will increment, we can easily track down
 	number of elements in linked list. To get the node at index - 1, repeat the loop till count-1
-	This will become the complexy O(n), if we have the tail pointer then the complexity
-	will become O(n-1) eventually O(n)
+	This will become the complexy O(n)(Add method in SinglyLinkedList, if we have the tail
+	pointer then the complexity will become O(n-1) eventually O(n)(Add method in 
+	SinglyLinkedListWithTail)
+------------------------------------------------------------------------------
+interview questions:
+1) How do you insert a node at the top and what is the time complexity?
+	just create a newItem with data and set newItem next to head and  make new item as head
+	Time complexity is constant i.e. O(1)
+2) How do you insert a node at the end and what is the time complexity?
+	iterate through all nodes, find the last node pointer and make lastnode.next=newItem
+	Time complexity is O(n)
+	Next question - can insertion at the end reduced to O(1)?
+	Yes possible if we have a tail pointer. If we have tail pointer, make 
+	tail.next=newItem
+	tail = newItem

@@ -13,10 +13,11 @@ Each node has refence to next node and last node will have next pointer as null.
 
 ### Doubly Linked List:
 Each node has refence to next node and previous node as well and last node will have next pointer as null.
-   ### Example:
+   #### Example:
 <img src="LinkedListDataStructure/src/resources/DoubleLinkedList.jpg" height="150" />
+
 ### Circular Linked List:
 Each node has refence to next node and previous node as well and last node will have next pointer as starting node circularly. 
-   ### Example:
+   #### Example:
 <img src="LinkedListDataStructure/src/resources/CicrcularLinkedList.jpg" height="150" />
 

@@ -14,7 +14,12 @@ Each node has refence to a next node and last node will have next node as null.
  #### Insertion:
    ##### Insert at the Start of Linked List:
 Imagine linked list always as a normal chain  where you have a chain and you want to insert a new link on the starting, what you will do?
+
    . Get a new link and append to the existing chain starting(head).
+   
+   Node newNode = new Node(10); //Create a new node
+   newItem.next = head; //Just link the new item to the existing head.
+   head = newItem; //now newItem will become head as we are inserting at the start of linked list
 
 ### Doubly Linked List:
 Each node has refence to next node and previous node as well and last node will have next pointer as null.

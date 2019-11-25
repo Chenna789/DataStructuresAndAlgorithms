@@ -13,7 +13,7 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithOutTail
         /// <summary>
         /// printing all the values by iterating the loop from head node
         /// </summary>
-        public void Print()
+        public override string ToString()
         {
             Node current = head;
             while(current != null)
@@ -21,7 +21,7 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithOutTail
                 Console.Write(current.data + " ");
                 current = current.next;
             }
-            Console.WriteLine($" ::: head->data {head.data}");
+            return $" ::: head->data {head.data}";
         }
     }
 }

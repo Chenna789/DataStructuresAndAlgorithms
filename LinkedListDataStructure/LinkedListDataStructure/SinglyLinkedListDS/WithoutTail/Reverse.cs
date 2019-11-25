@@ -21,5 +21,22 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithOutTail
             }
             head = prev;
         }
+
+        public void Reverse(Node current)
+        {
+            if (current == null) return;
+            if (current.next == null)
+            {
+                head = current;
+                return;
+            }
+            Reverse(current.next);
+            current.next.next = current;
+            current.next = null;
+        }
+        public void ReverseUsingRecursion()
+        {
+            Reverse(this.head);
+        }
     }
 }

@@ -13,9 +13,9 @@ Each node has refence to a next node and last node will have next node as null.
 
  #### Insertion:
    ##### Insert at the Start of Linked List:
-Imagine linked list always as a normal chain  where you have a chain and you want to insert a new link on the starting, what you will do?
-   <br />
-   Get a new link and append to the existing chain starting(head). <br />
+Imagine linked list always as a normal chain  where you have a chain and you want to insert a new link on the starting, what will you do?
+ <br />
+      Get a new link and append to the existing chain starting(head). <br /> <br />
    Node newNode = new Node(10); //Create a new node <br />
    newItem.next = head; //Just link the new item to the existing head. <br />
    head = newItem; //now newItem will become head as we are inserting at the start of linked list. <br />

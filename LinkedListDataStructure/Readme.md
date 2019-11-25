@@ -19,6 +19,9 @@ Imagine linked list always as a normal chain  where you have a chain and you wan
    Node newNode = new Node(10); //Create a new node <br />
    newItem.next = head; //Just link the new item to the existing head. <br />
    head = newItem; //now newItem will become head as we are inserting at the start of linked list.<br />
+   
+   ###### Complexity:
+  Inserting a node at the start of linked list will always have complexiy of O(1)(constant time)
 
 ### Doubly Linked List:
 Each node has refence to next node and previous node as well and last node will have next pointer as null.

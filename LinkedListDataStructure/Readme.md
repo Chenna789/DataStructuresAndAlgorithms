@@ -9,14 +9,14 @@ There are 3 types of linked lists.
 ### Singly Linked List:
 Each node has refence to next node and last node will have next pointer as null. 
    #### Example: 
-<img src="LinkedListDataStructure/src/resources/SingleLinkedList.png" height="150" />
+<img src="LinkedListDataStructure/src/resources/SingleLinkedList.jpg" height="150" />
 
 ### Doubly Linked List:
 Each node has refence to next node and previous node as well and last node will have next pointer as null.
    ### Example:
-<img src="LinkedListDataStructure/src/resources/DoubleLinkedList.png" height="150" />
+<img src="LinkedListDataStructure/src/resources/DoubleLinkedList.jpg" height="150" />
 ### Circular Linked List:
 Each node has refence to next node and previous node as well and last node will have next pointer as starting node circularly. 
    ### Example:
-<img src="LinkedListDataStructure/src/resources/CicrcularLinkedList.png" height="150" />
+<img src="LinkedListDataStructure/src/resources/CicrcularLinkedList.jpg" height="150" />
 

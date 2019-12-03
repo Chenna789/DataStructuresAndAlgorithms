@@ -1,4 +1,5 @@
 ﻿using LinkedListDataStructure.SinglyLinkedListDS;
+using LinkedListDataStructure.SinglyLinkedListDS.Practice;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,9 @@ namespace LinkedListDataStructure
             singlyLinkedList.AddLast(30);
             Console.Write("After adding 10 20 30 last: ");
             Console.WriteLine(singlyLinkedList);
-            singlyLinkedList.ReverseUsingRecursion();
+            LinkedListPractice linkedListPractice = new LinkedListPractice();
+            Console.WriteLine($"Is palindrome: {linkedListPractice.IsPalindrome2(singlyLinkedList.head)}");
+            Console.WriteLine($"Sorted in order: {singlyLinkedList.IsLinkedListSorted()}");
             singlyLinkedList.AddFirst(5);
             Console.Write("After adding 5 to the first: ");
             Console.WriteLine(singlyLinkedList);
@@ -50,6 +53,9 @@ namespace LinkedListDataStructure
             Console.Write("After removing 10: ");
             Console.WriteLine(singlyLinkedList);
             Console.WriteLine($"Getting node at index 3: {singlyLinkedList.GetNode(3).data}");
+            Console.WriteLine($"Getting node at index 3 from tail: {singlyLinkedList.GetNodeFromTailWithTwoPointers(3).data}");
+            Console.WriteLine($"Getting node at index 3 from tail with count: {singlyLinkedList.GetNodeFromTailWithCount(3).data}");
+            Console.WriteLine($"Getting node at index 3 from tail without count: {singlyLinkedList.GetNodeFromTailWithOutCount(3).data}");
             Object obj = 20;
             Console.WriteLine($"Getting node with the value 20: {singlyLinkedList.GetNode(obj).data}");
             Console.WriteLine($"Getting middle Node without count: {singlyLinkedList.FindMiddleWithOutCount().data}");
@@ -67,10 +73,15 @@ namespace LinkedListDataStructure
             singlyLinkedList.ReverseUsingRecursion();
             Console.Write("Reverse using recursion: ");
             Console.WriteLine(singlyLinkedList);
+            singlyLinkedList.ReverseUsingStack();
+            Console.Write("Reverse using Stack: ");
+            Console.WriteLine(singlyLinkedList);
+            singlyLinkedList.ReverseUsingStack();
+            Console.Write("Reverse Back using Stack: ");
+            Console.WriteLine(singlyLinkedList);
             //singlyLinkedList.CreateLoop();
             Console.WriteLine($"loop in linked list method1: {singlyLinkedList.LoopInLinkedList1()}");
             Console.WriteLine($"loop in linked list method2: {singlyLinkedList.LoopInLinkedList2()}");
-            Console.WriteLine(singlyLinkedList);
             Console.WriteLine("*****************************************************************************");
         }
     }

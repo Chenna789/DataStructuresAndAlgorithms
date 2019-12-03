@@ -8,7 +8,7 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithTail
 {
     partial class SinglyLinkedListWithTail : ILinkedList
     {
-        private Node head;
+        public Node head { get; private set; }
         private Node tail;
         public int Count { get; private set; } = 0;
         /// <summary>

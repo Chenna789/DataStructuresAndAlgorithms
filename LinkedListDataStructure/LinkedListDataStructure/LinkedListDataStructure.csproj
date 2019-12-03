@@ -43,10 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericNode.cs" />
+    <Compile Include="DoublyLinkedListDS\AddAt.cs" />
+    <Compile Include="DoublyLinkedListDS\AddLast.cs" />
+    <Compile Include="DoublyLinkedListDS\DoublyLinkedList.cs" />
+    <Compile Include="DoublyLinkedListDS\GenericNode.cs" />
+    <Compile Include="DoublyLinkedListDS\AddFirst.cs" />
+    <Compile Include="SinglyLinkedListDS\GenericNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinglyLinkedListDS\ILinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\Practice\Palindrome.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\AddAfter.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\AddAtSpecifiedIndex.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\AddBefore.cs" />
@@ -56,12 +62,14 @@
     <Compile Include="SinglyLinkedListDS\WithGenerics\FindMiddleElement.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\GetNode.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\Indexer.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\LoopInLinkedList.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\Remove.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\RemoveDuplicates.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\RemoveWith_O%281%29.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\Reverse.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\SetNode.cs" />
     <Compile Include="SinglyLinkedListDS\WithGenerics\SinglyLinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\WithGenerics\SortLinkedList.cs" />
     <Compile Include="SinglyLinkedListDS\WithOutTail\AddAfter.cs" />
     <Compile Include="SinglyLinkedListDS\WithOutTail\AddAtSpecifiedIndex.cs" />
     <Compile Include="SinglyLinkedListDS\WithOutTail\AddBefore.cs" />
@@ -78,6 +86,7 @@
     <Compile Include="SinglyLinkedListDS\WithOutTail\Reverse.cs" />
     <Compile Include="SinglyLinkedListDS\WithOutTail\SetNode.cs" />
     <Compile Include="SinglyLinkedListDS\WithOutTail\SinglyLinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\WithOutTail\SortLinkedList.cs" />
     <Compile Include="SinglyLinkedListDS\WithTail\AddAfter.cs" />
     <Compile Include="SinglyLinkedListDS\WithTail\AddAtSpecifiedIndex.cs" />
     <Compile Include="SinglyLinkedListDS\WithTail\AddBefore.cs" />
@@ -95,6 +104,7 @@
     <Compile Include="SinglyLinkedListDS\WithTail\Reverse.cs" />
     <Compile Include="SinglyLinkedListDS\WithTail\SetNode.cs" />
     <Compile Include="SinglyLinkedListDS\WithTail\SinglyLinkedList.cs" />
+    <Compile Include="SinglyLinkedListDS\WithTail\SortLinkedList.cs" />
     <Compile Include="TestLinkedList.cs" />
   </ItemGroup>
   <ItemGroup>

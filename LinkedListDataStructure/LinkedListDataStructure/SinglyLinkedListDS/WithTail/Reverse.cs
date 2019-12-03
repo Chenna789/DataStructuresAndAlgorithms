@@ -23,7 +23,28 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithTail
             head = prev;
         }
 
-        public void Reverse(Node current)
+        public void ReverseUsingStack()
+        {
+            Node current = head;
+            Stack<Node> stack = new Stack<Node>();
+            while(current != null)
+            {
+                stack.Push(current);
+                current = current.next;
+            }
+            Node dummyNode = new Node(-1);
+            head = dummyNode;
+            while(stack.Count > 0)
+            {
+                Node newNode = stack.Pop();
+                head.next = new Node(newNode.data);
+                head = head.next;
+                tail = newNode;
+            }
+            head = dummyNode.next;
+        }
+
+        private void Reverse(Node current)
         {
             if (current == null) return;
             if (current.next == null)

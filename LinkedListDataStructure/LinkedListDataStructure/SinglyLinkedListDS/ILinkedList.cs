@@ -10,8 +10,10 @@ namespace LinkedListDataStructure.SinglyLinkedListDS
     {
         object this[int index]
         {
-        get;set;
+            get;    set;
         }
+
+        Node head { get; }
         void AddAfter(object existingNodedata, object newNodedata);
         void Add(int index, object data);
         void AddBefore(object existingNodedata, object newNodedata);
@@ -25,6 +27,7 @@ namespace LinkedListDataStructure.SinglyLinkedListDS
         void RemoveWith_O_1(Node node);
         void Reverse();
         void ReverseUsingRecursion();
+        void ReverseUsingStack();
         void SetNodeData(int index, object newData);
         Node FindMiddleWithOutCount();
         Node FindMiddleWithCount();
@@ -32,5 +35,11 @@ namespace LinkedListDataStructure.SinglyLinkedListDS
         void CreateLoop();
         bool LoopInLinkedList1();
         bool LoopInLinkedList2();
+        bool IsLinkedListSorted();
+        bool IsLinkedListSortedInDescending();
+
+        Node GetNodeFromTailWithOutCount(int index);
+        Node GetNodeFromTailWithCount(int index);
+        Node GetNodeFromTailWithTwoPointers(int index);
     }
 }

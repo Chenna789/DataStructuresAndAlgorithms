@@ -40,5 +40,26 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithGenerics
             current.next = null;
             tail = current;
         }
+
+        public void ReverseUsingStack()
+        {
+            Node<AnyType> current = this.head;
+            Stack<Node<AnyType>> stack = new Stack<Node<AnyType>>();
+            while(current != null)
+            {
+                stack.Push(current);
+                current = current.next;
+            }
+            Node<AnyType> dummyNode = new Node<AnyType>(default(AnyType));
+            Node<AnyType> head = dummyNode;
+            while(stack.Count > 0)
+            {
+                Node<AnyType> newNode = new Node<AnyType>(stack.Pop().data);
+                head.next = newNode;
+                head = head.next;
+                tail = newNode;
+            }
+            head = dummyNode.next;
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace LinkedListDataStructure.SinglyLinkedListDS.WithOutTail
 {
     partial class SinglyLinkedListWithOutTail : ILinkedList
     {
-        private Node head;
+        public Node head { get; private set; }
         public int Count { get; private set; } = 0;
         /// <summary>
         /// printing all the values by iterating the loop from head node

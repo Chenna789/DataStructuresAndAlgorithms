@@ -14,6 +14,8 @@ namespace LinkedListDataStructure.DoublyLinkedListDS
 
         public override string ToString()
         {
+            HashSet<int> hash = new HashSet<int>();
+            int[] a = new int[] { };
             Node<AnyType> current = head;
             while(current != null)
             {

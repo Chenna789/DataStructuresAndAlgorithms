@@ -8,17 +8,21 @@ namespace BinaryTreeDataStructure.BinaryTree
 {
     partial class BinaryTreeDS<AnyType>
     {
-        private Node<AnyType> root;
+        public Node<AnyType> root { get; private set; }
+
+        public int count { get; private set; }
         public override string ToString()
         {
-            Node<AnyType> current = root;
+            Node<AnyType> current = root.right;
+            Console.WriteLine("Root data is " + root.data);
+
             Console.WriteLine("Right side ");
             while(current != null)
             {
                 Console.WriteLine(current.data);
                 current = current.right;
             }
-            current = root;
+            current = root.left;
             Console.WriteLine("Left side ");
             while (current != null)
             {
